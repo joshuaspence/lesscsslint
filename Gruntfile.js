@@ -9,11 +9,15 @@ module.exports = function(grunt) {
             },
             bin: 'bin/**/*.js',
             grunt: 'Gruntfile.js',
-            src: 'src/**/*.js'
+            src: 'src/**/*.js',
+            test: 'test/**/*.js'
         },
         jsonlint: {
             jshint: ['.jshintrc'],
             npm: ['package.json']
+        },
+        nodeunit: {
+            tests: ['test/**/*.js']
         },
         release: {
             options: {}
@@ -22,6 +26,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-jsonlint');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-release');
 
     // Register tasks.
@@ -29,7 +34,11 @@ module.exports = function(grunt) {
         'jsonlint',
         'jshint'
     ]);
+    grunt.registerTask('test', [
+        'nodeunit'
+    ]);
     grunt.registerTask('default', [
-        'lint'
+        'lint',
+        'test'
     ]);
 };
