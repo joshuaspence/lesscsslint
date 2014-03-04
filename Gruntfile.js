@@ -30,6 +30,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-release');
 
     // Register tasks.
+    grunt.registerTask('ci', ['lint', 'test']);
     grunt.registerTask('lint', ['jsonlint', 'jshint']);
     grunt.registerTask('test', ['nodeunit']);
     grunt.registerTask('default', ['lint', 'test']);
