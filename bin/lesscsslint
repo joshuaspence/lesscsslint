@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var _ = require('lodash'),
-    commander = require('commander'),
+    program = require('commander'),
     csslint = require('csslint').CSSLint,
     fs = require('fs'),
     less = require('less'),
@@ -58,24 +58,24 @@ var parseLessFile = function(input, data) {
                 return true;
             });
 
-            var formatter = csslint.getFormatter(commander.format);
+            var formatter = csslint.getFormatter(program.format);
             console.log(formatter.formatResults(results, input || 'STDIN'));
         }
     });
 };
 
-commander
+program
     .version(require('../package.json').version)
     .usage('[options] <source-map>')
     .option('--format <format>', 'Indicate which format to use for output.', 'text')
     .parse(process.argv);
 
-if (!commander.args) {
+if (!program.args) {
   console.error('No input');
   process.exit(1);
 }
 
-_(commander.args).forEach(function(input) {
+_(program.args).forEach(function(input) {
     if (input !== '-') {
         input = path.resolve(process.cwd(), input);
         fs.readFile(input, 'utf8', function(err, data) {
