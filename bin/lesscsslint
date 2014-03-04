@@ -61,7 +61,7 @@ var parseLessFile = function(err, data) {
                 return true;
             });
 
-            var formatter = csslint.getFormatter('compact');
+            var formatter = csslint.getFormatter(commander.format);
             console.log(formatter.formatResults(results, ''));
         }
     });
@@ -70,6 +70,7 @@ var parseLessFile = function(err, data) {
 commander
     .version(require('../package.json').version)
     .usage('[options] <source-map>')
+    .option('--format <format>', 'Indicate which format to use for output.', 'text')
     .parse(process.argv);
 
 var input = commander.args[0];
