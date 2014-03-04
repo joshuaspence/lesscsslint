@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             },
             bin: 'bin/**/*.js',
             grunt: 'Gruntfile.js',
-            src: 'src/**/*.js',
+            lib: 'lib/**/*.js',
             test: 'test/**/*.js'
         },
         jsonlint: {
