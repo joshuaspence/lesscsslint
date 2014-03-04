@@ -66,7 +66,7 @@ var parseLessFile = function(input, data) {
 
 program
     .version(require('../package.json').version)
-    .usage('[options] <source-map>')
+    .usage('[options] <files>')
     .option('--format <format>', 'Indicate which format to use for output.', 'text')
     .parse(process.argv);
 
