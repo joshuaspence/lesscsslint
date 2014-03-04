@@ -4,7 +4,9 @@
   "description": "CSSLint for Less.",
   "keywords": [
     "csslint",
-    "less"
+    "less",
+    "lesscss",
+    "lint"
   ],
   "homepage": "https://github.com/joshuaspence/lesscsslint",
   "repository": {
