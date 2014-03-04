@@ -45,5 +45,8 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-jsonlint": "~1.0.4",
     "grunt-release": "~0.7.0"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
   }
 }
