@@ -8,7 +8,7 @@
   "homepage": "https://github.com/joshuaspence/lesscsslint",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:joshuaspence/lesscsslint.git"
+    "url": "git://github.com/joshuaspence/lesscsslint.git"
   },
   "bugs": {
     "url": "https://github.com/joshuaspence/lesscsslint/issues"
