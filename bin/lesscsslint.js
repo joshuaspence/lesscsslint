@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var _ = require('lodash'),
     program = require('commander'),
     csslint = require('csslint').CSSLint,
