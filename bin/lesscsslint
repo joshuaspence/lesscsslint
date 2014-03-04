@@ -6,7 +6,8 @@ var _ = require('lodash'),
     fs = require('fs'),
     less = require('less'),
     path = require('path'),
-    SourceMapConsumer = require('source-map').SourceMapConsumer;
+    SourceMapConsumer = require('source-map').SourceMapConsumer,
+    util = require('../lib/util');
 
 var lessOptions = {
     compress: false,
@@ -70,17 +71,13 @@ var parseLessFile = function(input, data) {
     });
 };
 
-function list(values) {
-  return values.split(',');
-}
-
 program
     .version(require('../package.json').version)
     .usage('[options] <files>')
     .option('--format <format>', 'Indicate which format to use for output.', 'text')
-    .option('--errors <rules>', 'Indicate which CSSLint rules to include as errors.', list)
-    .option('--warnings <rules>', 'Indicate which rules to include as warnings.', list)
-    .option('--ignore <rules>', 'Indicate which rules to ignore completely.', list)
+    .option('--errors <rules>', 'Indicate which CSSLint rules to include as errors.', util.list)
+    .option('--warnings <rules>', 'Indicate which rules to include as warnings.', util.list)
+    .option('--ignore <rules>', 'Indicate which rules to ignore completely.', util.list)
     .parse(process.argv);
 
 if (program.args.length === 0) {
