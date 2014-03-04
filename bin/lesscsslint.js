@@ -13,7 +13,42 @@ if (program.args.length === 0) {
     process.exit(1);
 }
 
+var formatter = csslint.getFormatter(program.format);
+var ruleset = csslint.getRuleset();
+csslint.getRules().forEach(function(rule) {
+    if (_.contains(program.errors, rule)) {
+        ruleset[rule.id] = 2;
+    } else if (_.contains(program.warnings, rule)) {
+        ruleset[rule.id] = 1;
+    } else if (_.contains(program.ignore, rule)) {
+        ruleset[rule.id] = 0;
+    }
+});
+
 _(program.args).forEach(function(input) {
+    var lintLess = function(data, callback) {
+        csslint.verify(data, ruleset, function(results) {
+            var smc = csslint.getSourceMapConsumer();
+
+            results.messages = _(results.messages).filter(function(message) {
+                var position = smc.originalPositionFor({
+                    line: message.line,
+                    column: message.col
+                });
+
+                if (position.source !== input && !(position.source === 'input' && input === '-')) {
+                    return false;
+                }
+
+                message.line = position.line;
+                message.column = position.column;
+                return true;
+            });
+
+            callback(results);
+        });
+    };
+
     if (input !== '-') {
         input = path.resolve(process.cwd(), input);
         fs.readFile(input, 'utf8', function(err, data) {
@@ -22,7 +57,10 @@ _(program.args).forEach(function(input) {
                 return;
             }
 
-            csslint.verifyLess(input, data);
+            csslint.setLessFile(input);
+            lintLess(data, function(results) {
+                console.log(formatter.formatResults(results, input || 'STDIN'));
+            });
         });
     } else {
         process.stdin.resume();
@@ -34,7 +72,9 @@ _(program.args).forEach(function(input) {
         });
 
         process.stdin.on('end', function() {
-            csslint.verifyLess(null, buffer);
+            lintLess(buffer, function(results) {
+                console.log(formatter.formatResults(results, input || 'STDIN'));
+            });
         });
     }
 });
