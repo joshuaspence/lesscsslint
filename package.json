@@ -30,7 +30,7 @@
       "email": "josh@freelancer.com"
     }
   ],
-  "bin": "./bin/lesscsslint",
+  "bin": "./bin/lesscsslint.js",
   "scripts": {
     "test": "grunt test"
   },
