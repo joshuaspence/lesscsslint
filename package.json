@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "description": "CSSLint for Less.",
   "keywords": [
-    "csslint"
+    "csslint",
+    "less"
   ],
   "homepage": "https://github.com/joshuaspence/lesscsslint",
   "repository": {
