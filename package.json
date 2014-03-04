@@ -1,0 +1,49 @@
+{
+  "name": "lesscsslint",
+  "version": "0.0.0",
+  "description": "CSSLint for Less.",
+  "keywords": [
+    "csslint"
+  ],
+  "homepage": "https://github.com/joshuaspence/lesscsslint",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:joshuaspence/lesscsslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshuaspence/lesscsslint/issues"
+  },
+  "author": {
+    "name": "Joshua Spence",
+    "email": "josh@freelancer.com"
+  },
+  "maintainers": [
+    {
+      "name": "Joshua Spence",
+      "email": "josh@freelancer.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Joshua Spence",
+      "email": "josh@freelancer.com"
+    }
+  ],
+  "bin": "./bin/lesscsslint",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "commander": "~2.1.0",
+    "csslint": "~0.10.0",
+    "less": "~1.7.0",
+    "lodash": "~2.4.1",
+    "source-map": "~0.1.33"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-jsonlint": "~1.0.4",
+    "grunt-release": "~0.7.0"
+  }
+}
