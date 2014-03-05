@@ -1,0 +1,35 @@
+test/less/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
+test/less/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
+test/less/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
+test/less/mixins.less: line 16, col 1, Warning - Don't use IDs in selectors.
+test/less/mixins.less: line 21, col 1, Warning - Don't use IDs in selectors.
+test/less/mixins.less: line 28, col 1, Warning - Don't use IDs in selectors.
+test/less/mixins.less: line 28, col 1, Warning - 2 IDs in the selector, really?
+test/less/mixins.less: line 28, col 1, Warning - 2 IDs in the selector, really?
+test/less/mixins.less: line 28, col 1, Warning - 2 IDs in the selector, really?
+test/less/mixins.less: line 55, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 55, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 58, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 62, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 62, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 65, col 8, Warning - Values of 0 shouldn't have units specified.
+test/less/mixins.less: line 67, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 67, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 53, col 3, Warning - Using width with border can sometimes make elements larger than you expect.
+test/less/mixins.less: line 65, col 8, Warning - Values of 0 shouldn't have units specified.
+test/less/mixins.less: line 65, col 8, Warning - Values of 0 shouldn't have units specified.
+test/less/mixins.less: line 67, col 1, Warning - Don't use adjoining classes.
+test/less/mixins.less: line 102, col 5, Warning - Heading (h1) should not be qualified.
+test/less/mixins.less: line 103, col 10, Warning - Heading (h1) should not be qualified.
+test/less/mixins.less: line 103, col 10, Warning - Heading (h1) has already been defined.
+test/less/mixins.less: line 104, col 6, Warning - The universal selector (*) is known to be slow.
+test/less/mixins.less: line 102, col 5, Warning - Heading (h2) should not be qualified.
+test/less/mixins.less: line 103, col 10, Warning - Heading (h2) should not be qualified.
+test/less/mixins.less: line 103, col 10, Warning - Heading (h2) has already been defined.
+test/less/mixins.less: line 104, col 6, Warning - The universal selector (*) is known to be slow.
+test/less/mixins.less: line 102, col 5, Warning - Heading (h3) should not be qualified.
+test/less/mixins.less: line 103, col 10, Warning - Heading (h3) should not be qualified.
+test/less/mixins.less: line 103, col 10, Warning - Heading (h3) has already been defined.
+test/less/mixins.less: line 104, col 6, Warning - The universal selector (*) is known to be slow.
+test/less/mixins.less: line 111, col 3, Warning - Expected (<bg-image>) but found '"/a.png"'.
+test/less/mixins.less: line 131, col 1, Warning - Don't use adjoining classes.

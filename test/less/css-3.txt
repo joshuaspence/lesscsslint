@@ -1,0 +1,34 @@
+test/less/css-3.less: line 3, col 20, Warning - Values of 0 shouldn't have units specified.
+test/less/css-3.less: line 3, col 24, Warning - Values of 0 shouldn't have units specified.
+test/less/css-3.less: line 3, col 3, Warning - The property -webkit-box-shadow is compatible with -moz-box-shadow and should be included as well.
+test/less/css-3.less: line 3, col 64, Warning - Values of 0 shouldn't have units specified.
+test/less/css-3.less: line 3, col 3, Warning - Missing standard property 'box-shadow' to go along with '-moz-box-shadow'.
+test/less/css-3.less: line 5, col 3, Warning - The property -o-transform is compatible with -webkit-transform and should be included as well.
+test/less/css-3.less: line 5, col 3, Warning - Missing standard property 'transform' to go along with '-webkit-transform'.
+test/less/css-3.less: line 5, col 3, Warning - The property -moz-transform is compatible with -webkit-transform and should be included as well.
+test/less/css-3.less: line 5, col 3, Warning - The property -ms-transform is compatible with -webkit-transform and should be included as well.
+test/less/css-3.less: line 9, col 3, Warning - Unknown property 'unicode-range'.
+test/less/css-3.less: line 12, col 3, Warning - The property -ms-transform is compatible with -moz-transform and should be included as well.
+test/less/css-3.less: line 12, col 3, Warning - The property -webkit-transform is compatible with -moz-transform and should be included as well.
+test/less/css-3.less: line 12, col 3, Warning - The property -o-transform is compatible with -moz-transform and should be included as well.
+test/less/css-3.less: line 15, col 1, Warning - Unqualified attribute selectors are known to be slow.
+test/less/css-3.less: line 22, col 34, Error - Expected IDENT at line 20, col 34.
+test/less/css-3.less: line 26, col 16, Error - Expected IDENT at line 23, col 16.
+test/less/css-3.less: line 44, col 2, Warning - Attribute selectors with ^= are slow!
+test/less/css-3.less: line 48, col 2, Warning - Attribute selectors with $= are slow!
+test/less/css-3.less: line 60, col 1, Warning - Don't use IDs in selectors.
+test/less/css-3.less: line 61, col 3, Warning - The property -moz-animation is compatible with -webkit-animation and should be included as well.
+test/less/css-3.less: line 87, col 9, Error - Unexpected token '12vmin' at line 81, col 9.
+test/less/css-3.less: line 91, col 1, Error - Unknown @ rule: @supports.
+test/less/css-3.less: line 108, col 1, Error - @namespace not allowed here.
+test/less/css-3.less: line 112, col 1, Warning - Heading (|h1) has already been defined.
+test/less/css-3.less: line 113, col 1, Warning - Heading (*|h1) has already been defined.
+test/less/css-3.less: line 114, col 1, Warning - Heading (h1) has already been defined.
+test/less/css-3.less: line 116, col 3, Warning - Unknown property 'UpperCaseProperties'.
+test/less/css-3.less: line 118, col 1, Error - Unknown @ rule: @host.
+test/less/css-3.less: line 126, col 9, Error - Expected LBRACE at line 126, col 9.
+test/less/css-3.less: line 126, col 9, Error - Unexpected token '^' at line 126, col 9.
+test/less/css-3.less: line 127, col 6, Error - Expected LBRACE at line 127, col 6.
+test/less/css-3.less: line 127, col 6, Error - Unexpected token '^' at line 127, col 6.
+test/less/css-3.less: line 127, col 7, Error - Unexpected token '^' at line 127, col 7.
+test/less/css-3.less: line 128, col 3, Warning - Expected (inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | grid | inline-grid | none | inherit | -moz-box | -moz-inline-block | -moz-inline-box | -moz-inline-grid | -moz-inline-stack | -moz-inline-table | -moz-grid | -moz-grid-group | -moz-grid-line | -moz-groupbox | -moz-deck | -moz-popup | -moz-stack | -moz-marker | -webkit-box | -webkit-inline-box | -ms-flexbox | -ms-inline-flexbox | flex | -webkit-flex | inline-flex | -webkit-inline-flex) but found 'done'.
