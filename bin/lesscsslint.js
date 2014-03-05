@@ -44,13 +44,13 @@ _(program.args).forEach(function(input) {
         input = path.resolve(process.cwd(), input);
         fs.readFile(input, 'utf8', function(err, data) {
             if (err) {
-                console.error(err);
+                console.error(err.toString());
                 process.exit(2);
             }
 
             csslint.verify(input, data, ruleset, function(err, results) {
                 if (err) {
-                    console.error(err);
+                    console.error(err.toString());
                     process.exit(3);
                 }
 
@@ -75,7 +75,7 @@ _(program.args).forEach(function(input) {
         process.stdin.on('end', function() {
             csslint.verify(input, buffer, ruleset, function(err, results) {
                 if (err) {
-                    console.error(err);
+                    console.error(err.toString());
                     process.exit(3);
                 }
 
