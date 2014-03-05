@@ -45,15 +45,22 @@ _(program.args).forEach(function(input) {
         fs.readFile(input, 'utf8', function(err, data) {
             if (err) {
                 console.error(err);
-                return;
+                process.exit(2);
             }
 
             csslint.verify(input, data, ruleset, function(err, results) {
                 if (err) {
                     console.error(err);
+                    process.exit(3);
                 }
 
                 console.log(formatter.formatResults(results, input));
+
+                if (_(results.messages).size() > 0) {
+                    process.exit(4);
+                } else {
+                    process.exit(0);
+                }
             });
         });
     } else {
@@ -69,9 +76,16 @@ _(program.args).forEach(function(input) {
             csslint.verify(input, buffer, ruleset, function(err, results) {
                 if (err) {
                     console.error(err);
+                    process.exit(3);
                 }
 
                 console.log(formatter.formatResults(results, 'STDIN'));
+
+                if (_(results.messages).size() > 0) {
+                    process.exit(4);
+                } else {
+                    process.exit(0);
+                }
             });
         });
     }
