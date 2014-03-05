@@ -34,7 +34,7 @@
   ],
   "bin": "./bin/lesscsslint.js",
   "scripts": {
-    "test": "grunt ci"
+    "test": "grunt test"
   },
   "dependencies": {
     "commander": "~2.1.0",
