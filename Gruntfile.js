@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             npm: ['package.json']
         },
         nodeunit: {
-            tests: ['test/**/*.js']
+            all: ['test/**/*.js']
         },
         release: {
             options: {}
