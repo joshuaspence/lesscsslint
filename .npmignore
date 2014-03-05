@@ -1,7 +1,6 @@
 /test/
 /Gruntfile.js
 /lesscsslint.sublime-project
-/lesscsslint.sublime-workspace
 /.editorconfig
 /.jshintrc
 /.npmignore
