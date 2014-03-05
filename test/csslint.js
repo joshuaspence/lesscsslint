@@ -18,14 +18,17 @@ module.exports = (function() {
             var basename = path.basename(file, '.less');
             file = path.join('test/less', file);
 
-            test.expect(3);
+            test.expect(4);
 
-            csslint.verify(file, fs.readFileSync(file, 'utf8'), csslint.getRuleset(), function(err, results) {
+            fs.readFile(file, 'utf8', function(err, data) {
                 test.ifError(err);
-                fs.readFile(path.join('test/less', basename + '.txt'), 'utf8', function(err, expectedResults) {
+                csslint.verify(file, data, csslint.getRuleset(), function(err, results) {
                     test.ifError(err);
-                    test.equal(formatter.formatResults(results, file), expectedResults);
-                    test.done();
+                    fs.readFile(path.join('test/less', basename + '.txt'), 'utf8', function(err, expectedResults) {
+                        test.ifError(err);
+                        test.equal(formatter.formatResults(results, file), expectedResults);
+                        test.done();
+                    });
                 });
             });
         };

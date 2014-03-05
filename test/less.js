@@ -16,19 +16,23 @@ module.exports = (function() {
             var basename = path.basename(file, '.less');
             file = path.join('test/less', file);
 
-            test.expect(5);
+            test.expect(6);
 
-            less.toCSS(file, fs.readFileSync(file, 'utf8'), function(err, css, sourceMap) {
+            fs.readFile(file, 'utf8', function(err, data) {
                 test.ifError(err);
 
-                fs.readFile(path.join('test/less', basename + '.css'), 'utf8', function(err, expectedCss) {
+                less.toCSS(file, data, function(err, css, sourceMap) {
                     test.ifError(err);
-                    test.equal(css, expectedCss);
 
-                    fs.readFile(path.join('test/less', basename + '.css.map'), 'utf8', function(err, expectedSourceMap) {
+                    fs.readFile(path.join('test/less', basename + '.css'), 'utf8', function(err, expectedCss) {
                         test.ifError(err);
-                        test.equal(sourceMap, expectedSourceMap);
-                        test.done();
+                        test.equal(css, expectedCss);
+
+                        fs.readFile(path.join('test/less', basename + '.css.map'), 'utf8', function(err, expectedSourceMap) {
+                            test.ifError(err);
+                            test.equal(sourceMap, expectedSourceMap);
+                            test.done();
+                        });
                     });
                 });
             });
