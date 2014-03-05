@@ -24,7 +24,7 @@ program.on('--version', function() {
 program.parse(process.argv);
 
 // If no inputs are specified, then print usage and exit.
-if (program.args.length === 0) {
+if (!program.args.length) {
     program.outputHelp();
     process.exit(1);
 }
