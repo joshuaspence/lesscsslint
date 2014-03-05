@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             bin: 'bin/**/*.js',
             grunt: 'Gruntfile.js',
             lib: 'lib/**/*.js',
-            test: 'test/**/*.js'
+            test: '<%= nodeunit.all %>'
         },
         jsonlint: {
             jshint: ['.jshintrc'],
