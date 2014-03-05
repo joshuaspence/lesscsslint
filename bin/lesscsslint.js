@@ -6,7 +6,18 @@ var _ = require('lodash'),
     csslint = require('../lib/csslint'),
     fs = require('fs'),
     path = require('path'),
-    program = require('../lib/cli').parse(process.argv);
+    program = require('commander'),
+    util = require('../lib/util');
+
+program
+    .version(require('../package.json').version)
+    .usage('[options] <files>')
+    .option('--format <format>', 'Indicate which format to use for output.', 'text')
+    .option('--errors <rules>', 'Indicate which CSSLint rules to include as errors.', util.list)
+    .option('--warnings <rules>', 'Indicate which rules to include as warnings.', util.list)
+    .option('--ignore <rules>', 'Indicate which rules to ignore completely.', util.list)
+    .parse(process.argv);
+
 
 if (program.args.length === 0) {
     program.outputHelp();
@@ -26,29 +37,6 @@ csslint.getRules().forEach(function(rule) {
 });
 
 _(program.args).forEach(function(input) {
-    var lintLess = function(data, callback) {
-        csslint.verify(data, ruleset, function(results) {
-            var smc = csslint.getSourceMapConsumer();
-
-            results.messages = _(results.messages).filter(function(message) {
-                var position = smc.originalPositionFor({
-                    line: message.line,
-                    column: message.col
-                });
-
-                if (position.source !== input && !(position.source === 'input' && input === '-')) {
-                    return false;
-                }
-
-                message.line = position.line;
-                message.column = position.column;
-                return true;
-            });
-
-            callback(results);
-        });
-    };
-
     if (input !== '-') {
         input = path.resolve(process.cwd(), input);
         fs.readFile(input, 'utf8', function(err, data) {
@@ -57,9 +45,12 @@ _(program.args).forEach(function(input) {
                 return;
             }
 
-            csslint.setLessFile(input);
-            lintLess(data, function(results) {
-                console.log(formatter.formatResults(results, input || 'STDIN'));
+            csslint.verify(input, data, ruleset, function(err, results) {
+                if (err) {
+                    console.error(err);
+                }
+
+                console.log(formatter.formatResults(results, input));
             });
         });
     } else {
@@ -72,8 +63,12 @@ _(program.args).forEach(function(input) {
         });
 
         process.stdin.on('end', function() {
-            lintLess(buffer, function(results) {
-                console.log(formatter.formatResults(results, input || 'STDIN'));
+            csslint.verify(input, buffer, ruleset, function(err, results) {
+                if (err) {
+                    console.error(err);
+                }
+
+                console.log(formatter.formatResults(results, 'STDIN'));
             });
         });
     }
