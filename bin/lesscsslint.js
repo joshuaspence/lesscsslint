@@ -18,13 +18,16 @@ program
     .option('--ignore <rules>', 'Indicate which rules to ignore completely.', util.list)
     .parse(process.argv);
 
-
+// If no inputs are specified, then print usage and exit.
 if (program.args.length === 0) {
     program.outputHelp();
     process.exit(1);
 }
 
+// Setup the CSSLint formatter that will be used for output.
 var formatter = csslint.getFormatter(program.format);
+
+// Setup the CSSLint rules that will be applied.
 var ruleset = csslint.getRuleset();
 csslint.getRules().forEach(function(rule) {
     if (_.contains(program.errors, rule)) {
