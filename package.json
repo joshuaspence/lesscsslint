@@ -18,18 +18,18 @@
   },
   "author": {
     "name": "Joshua Spence",
-    "email": "josh@freelancer.com"
+    "email": "josh@joshuaspence.com"
   },
   "maintainers": [
     {
       "name": "Joshua Spence",
-      "email": "josh@freelancer.com"
+      "email": "josh@joshuaspence.com"
     }
   ],
   "contributors": [
     {
       "name": "Joshua Spence",
-      "email": "josh@freelancer.com"
+      "email": "josh@joshuaspence.com"
     }
   ],
   "bin": "./bin/lesscsslint.js",
