@@ -12,3 +12,6 @@ insert_final_newline = true
 
 [package.json]
 indent_size = 2
+
+[*.css.map]
+insert_final_newline = false
