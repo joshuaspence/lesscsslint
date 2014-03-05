@@ -2,6 +2,7 @@
 /Gruntfile.js
 /lesscsslint.sublime-project
 /.editorconfig
+/.jscsrc
 /.jshintrc
 /.npmignore
 /.travis.yml
