@@ -9,6 +9,7 @@
     "lint"
   ],
   "homepage": "https://github.com/joshuaspence/lesscsslint",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/joshuaspence/lesscsslint.git"
