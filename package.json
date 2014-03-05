@@ -9,14 +9,10 @@
     "lint"
   ],
   "homepage": "https://github.com/joshuaspence/lesscsslint",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/joshuaspence/lesscsslint.git"
-  },
   "bugs": {
     "url": "https://github.com/joshuaspence/lesscsslint/issues"
   },
+  "license": "MIT",
   "author": {
     "name": "Joshua Spence",
     "email": "josh@joshuaspence.com"
@@ -28,6 +24,10 @@
     }
   ],
   "bin": "./bin/lesscsslint.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joshuaspence/lesscsslint.git"
+  },
   "scripts": {
     "test": "grunt test"
   },
