@@ -14,8 +14,14 @@ program
     .option('--format <format>', 'Indicate which format to use for output.', 'text')
     .option('--errors <rules>', 'Indicate which CSSLint rules to include as errors.', util.list)
     .option('--warnings <rules>', 'Indicate which rules to include as warnings.', util.list)
-    .option('--ignore <rules>', 'Indicate which rules to ignore completely.', util.list)
-    .parse(process.argv);
+    .option('--ignore <rules>', 'Indicate which rules to ignore completely.', util.list);
+
+program.on('--version', function() {
+    console.log('csslint: ' + require('csslint').CSSLint.version);
+    console.log('less: ' + require('less').version.join('.'));
+});
+
+program.parse(process.argv);
 
 // If no inputs are specified, then print usage and exit.
 if (program.args.length === 0) {
