@@ -4,7 +4,6 @@ test/less/css.less: line 17, col 1, Warning - Element (div#id) is overqualified,
 test/less/css.less: line 17, col 1, Warning - Don't use IDs in selectors.
 test/less/css.less: line 21, col 1, Warning - Don't use IDs in selectors.
 test/less/css.less: line 25, col 1, Warning - Don't use adjoining classes.
-test/less/css.less: line 25, col 1, Warning - Don't use adjoining classes.
 test/less/css.less: line 30, col 3, Warning - The universal selector (*) is known to be slow.
 test/less/css.less: line 36, col 3, Warning - The universal selector (*) is known to be slow.
 test/less/css.less: line 57, col 5, Warning - Heading (h1) should not be qualified.
