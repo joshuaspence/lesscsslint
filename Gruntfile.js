@@ -45,5 +45,6 @@ module.exports = function(grunt) {
     // Register tasks.
     grunt.registerTask('lint', ['jsonlint', 'jshint', 'jscs']);
     grunt.registerTask('test', ['nodeunit']);
+    grunt.registerTask('travis', ['lint', 'test']);
     grunt.registerTask('default', ['lint', 'test']);
 };
