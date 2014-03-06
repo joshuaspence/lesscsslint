@@ -29,9 +29,6 @@ if (!program.args.length) {
     process.exit(1);
 }
 
-// Setup the CSSLint formatter that will be used for output.
-var formatter = csslint.getFormatter(program.format);
-
 // Setup the CSSLint rules that will be applied.
 var ruleset = csslint.getRuleset();
 csslint.getRules().forEach(function(rule) {
@@ -59,7 +56,7 @@ _(program.args).forEach(function(input) {
                     process.exit(3);
                 }
 
-                console.log(formatter.formatResults(results, input));
+                console.log(csslint.format(results, 'STDIN', program.format));
 
                 if (_(results.messages).size() > 0) {
                     process.exit(4);
@@ -84,7 +81,7 @@ _(program.args).forEach(function(input) {
                     process.exit(3);
                 }
 
-                console.log(formatter.formatResults(results, 'STDIN'));
+                console.log(csslint.format(results, 'STDIN', program.format));
 
                 if (_(results.messages).size() > 0) {
                     process.exit(4);
