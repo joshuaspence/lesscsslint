@@ -6,7 +6,9 @@
     "csslint",
     "less",
     "lesscss",
-    "lint"
+    "lint",
+    "lint css",
+    "lint less"
   ],
   "homepage": "https://github.com/joshuaspence/lesscsslint",
   "bugs": {
