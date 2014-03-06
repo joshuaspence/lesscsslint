@@ -12,10 +12,6 @@ module.exports = (function() {
             return;
         }
 
-        if (file === 'utility.less') {
-            return;
-        }
-
         tests[file] = function(test) {
             var basename = path.basename(file, '.less');
             file = path.join('test/less', file);
@@ -32,10 +28,18 @@ module.exports = (function() {
                         test.ifError(err);
                         test.equal(css, expectedCss);
 
-                        fs.readFile(path.join('test/less', basename + '.css.map'), 'utf8', function(err, expectedSourceMap) {
-                            test.ifError(err);
-                            test.equal(sourceMap, expectedSourceMap);
-                            test.done();
+                        fs.exists(path.join('test/less', basename + '.css.map'), function(exists) {
+                            if (exists) {
+                                fs.readFile(path.join('test/less', basename + '.css.map'), 'utf8', function(err, expectedSourceMap) {
+                                    test.ifError(err);
+                                    test.equal(sourceMap, expectedSourceMap);
+                                    test.done();
+                                });
+                            } else {
+                                test.expect(5);
+                                test.equal(sourceMap, undefined);
+                                test.done();
+                            }
                         });
                     });
                 });
