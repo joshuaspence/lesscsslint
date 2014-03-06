@@ -1,0 +1,275 @@
+/* variables */
+/* mixins */
+.primary-font {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.secondary-font {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+.tertiary-font {
+  font-family: "Georgia", "Times", "Times New Roman", serif;
+}
+.thin-type {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ---------------------------------------------------------base styles--------------------------------------------------------- */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background-color: #f4f4f4;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  height: 100%;
+}
+p {
+  color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: normal;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+a {
+  color: #49c8e8;
+}
+a:hover {
+  color: #2f88cc;
+  text-decoration: none;
+}
+.main-container {
+  padding: 0 !important;
+  min-width: 0 !important;
+  height: 100%;
+}
+/* -------------------------------------------------------- styling --------------------------------------------------------- */
+section {
+  background-color: #de4062;
+  padding: 40px 90px 100px;
+}
+section .container {
+  max-width: 1170px;
+}
+section.hero-section {
+  height: 100%;
+  background: #00ff00;
+  text-align: center;
+  background-color: #000;
+  background: url('../images/timeline-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+section.hero-section .logo {
+  display: block;
+  padding-top: 50px;
+  padding: 60px 0 30px;
+  box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.2), inset 0 -2px 0px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+section.hero-section .logo .timeline-icon-logo {
+  font-size: 70px;
+  color: #ffffff;
+}
+section.hero-section .logo:hover {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+section.hero-section .container-fluid {
+  height: 100%;
+  position: relative;
+}
+section.hero-section .container-fluid .main-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 30%;
+  margin: auto;
+}
+section .main-text {
+  line-height: 100px;
+  font-size: 80px;
+  font-family: "wisdom_scriptregular", script, serif;
+  color: #ffffff;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+section .main-text .timeline-icon-ornament {
+  margin-top: 20px;
+}
+section[class*=year-] {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+section[class*=year-] .event-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+section[class*=year-] .event-list .event-item {
+  opacity: 0;
+  color: #ffffff;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.05);
+  padding: 70px 0 80px;
+}
+section[class*=year-] .event-list .event-item:nth-last-child(1) {
+  border-bottom: none;
+}
+section[class*=year-] .event-list .event-item .event-date {
+  font-size: 60px;
+  font-weight: 700;
+}
+section[class*=year-] .event-list .event-item .event-date span {
+  font-weight: 300;
+}
+section[class*=year-] .event-list .event-item .event-image-wrapper {
+  text-align: center;
+}
+section[class*=year-] .event-list .event-item .event-image-wrapper .event-image {
+  font-size: 240px;
+  margin: 100px 0 40px;
+}
+section[class*=year-] .event-list .event-item .event-image-wrapper .event-description {
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 34px;
+}
+section.year-2014 {
+  background-color: #1aa7cb;
+  background: #49c8e8;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1cbae2), color-stop(1, #32c1e5));
+  background: -ms-linear-gradient(bottom, #1cbae2, #32c1e5);
+  background: -moz-linear-gradient(center bottom, #1cbae2 0%, #32c1e5 100%);
+  background: -o-linear-gradient(#32c1e5, #1cbae2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32c1e5', endColorstr='#1cbae2', GradientType=0);
+}
+section.footer {
+  background-color: #1e232e;
+  text-align: center;
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+section.footer .footer-text {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+}
+section.footer .container-fluid {
+  height: 100%;
+  position: relative;
+}
+section.footer .container-fluid .footer-text-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 30%;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 40px 0px 100px;
+  }
+  section.hero-section .logo {
+    padding-top: 60px;
+  }
+  section.hero-section .logo .timeline-icon-logo {
+    font-size: 50px;
+  }
+  section[class*=year-] .event-list .event-item .event-date {
+    font-size: 36px;
+  }
+  section[class*=year-] .event-list .event-item .event-image-wrapper .event-image {
+    font-size: 140px;
+  }
+  section[class*=year-] .event-list .event-item .event-image-wrapper .event-description {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  section .main-text {
+    line-height: 70px;
+    font-size: 55px;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    padding: 40px 0px 100px;
+  }
+  section.hero-section .container-fluid {
+    height: 480px;
+  }
+  section.hero-section .container-fluid .main-text {
+    top: 50%;
+  }
+  section.hero-section .logo .timeline-icon-logo {
+    font-size: 40px;
+  }
+  section .main-text {
+    line-height: 60px;
+    font-size: 45px;
+  }
+  section[class*=year-] .event-list .event-item {
+    text-align: center;
+  }
+  section[class*=year-] .event-list .event-item .event-date {
+    font-size: 24px;
+  }
+  section[class*=year-] .event-list .event-item .event-image-wrapper .event-image {
+    font-size: 100px;
+  }
+}

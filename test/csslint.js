@@ -14,6 +14,10 @@ module.exports = (function() {
             return;
         }
 
+        if (file === 'utility.less') {
+            return;
+        }
+
         tests[file] = function(test) {
             var basename = path.basename(file, '.less');
             file = path.join('test/less', file);

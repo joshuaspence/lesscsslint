@@ -1,0 +1,67 @@
+.main-container .project-advantages {
+  margin-top: 10px;
+}
+.main-container .project-details {
+  min-height: 240px;
+}
+.main-container .project-details .project-name {
+  -webkit-font-smoothing: antialiased;
+  color: #333333;
+  float: left;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 22px;
+  line-height: 24px;
+  text-rendering: optimizelegibility;
+  width: 440px;
+}
+.main-container .project-details .project-budget,
+.main-container .project-details .project-description,
+.main-container .project-details .project-qualification,
+.main-container .project-details .project-skill {
+  margin: 0px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+.main-container .project-details .project-budget span,
+.main-container .project-details .project-description span,
+.main-container .project-details .project-qualification span,
+.main-container .project-details .project-skill span {
+  margin-bottom: 5px;
+}
+.main-container .project-details .project-qualification div {
+  margin-top: 10px;
+}
+.main-container .project-details .project-qualification div img {
+  margin-left: 5px;
+}
+.main-container .project-details .project-edit {
+  margin: 0px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+.main-container .project-details .project-edit a {
+  color: #217bb2;
+  background: transparent;
+}
+.main-container .project-details .project-edit a:hover {
+  color: #195d87;
+}
+.main-container .upgrade-form .project-upgrades {
+  padding: 25px 20px;
+}
+.main-container .upgrade-form .total {
+  margin-right: 10px;
+}
+.main-container .upgrade-form .ribbon .tooltip {
+  font-weight: bold;
+}
+.main-container .upgrade-form .ribbon .tip .attract-percentage {
+  font-size: 16px;
+}
+.main-container #projectRepostError {
+  margin: 0px;
+}
