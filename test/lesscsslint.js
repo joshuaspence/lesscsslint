@@ -26,7 +26,7 @@ module.exports.errorCodes = {
 
         test.expect(1);
         lesscsslint.stdin.write('.foo {');
-        lesscsslint.stdin.end()
+        lesscsslint.stdin.end();
         lesscsslint.on('close', function(code) {
             test.notEqual(code, 0);
             test.done();
