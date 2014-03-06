@@ -29,9 +29,6 @@ module.exports = function(grunt) {
         },
         nodeunit: {
             all: ['test/**/*.js']
-        },
-        release: {
-            options: {}
         }
     });
 
