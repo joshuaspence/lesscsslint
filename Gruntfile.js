@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     'use strict';
 
-    // Configuration
+    // Configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -35,6 +35,7 @@ module.exports = function(grunt) {
         }
     });
 
+    // Load tasks.
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-jscs-checker');
     grunt.loadNpmTasks('grunt-jsonlint');
