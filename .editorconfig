@@ -19,5 +19,5 @@ indent_size = 2
 [package.json]
 indent_size = 2
 
-[test/less/*.css.map]
+[test/less/*.{css.map,txt}]
 insert_final_newline = false
