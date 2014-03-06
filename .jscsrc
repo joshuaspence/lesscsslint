@@ -92,6 +92,10 @@
     "disallowKeywords": ["with"],
     "disallowMultipleLineBreaks": true,
     "validateLineBreaks": "LF",
+    "validateQuoteMarks": {
+        "mark": "'",
+        "escape": true
+    },
     "disallowKeywordsOnNewLine": ["else"],
     "requireLineFeedAtFileEnd": true,
     "safeContextKeyword": ["self"],
