@@ -10,11 +10,11 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[.travis.yml]
-indent_size = 2
+[test/less/**.{css.map,txt}]
+insert_final_newline = false
 
 [package.json]
 indent_size = 2
 
-[test/less/**.{css.map,txt}]
-insert_final_newline = false
+[.travis.yml]
+indent_size = 2
