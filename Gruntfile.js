@@ -1,6 +1,6 @@
-module.exports = function(grunt) {
-    'use strict';
+'use strict';
 
+module.exports = function(grunt) {
     // Configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
