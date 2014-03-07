@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+// Dependencies.
 var _ = require('lodash'),
     csslint = require('../lib/csslint'),
     fs = require('fs'),
