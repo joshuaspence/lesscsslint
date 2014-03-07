@@ -1,4 +1,5 @@
-# lesscsslint
+lesscsslint
+===========
 
 > CSSLint for Less.
 
