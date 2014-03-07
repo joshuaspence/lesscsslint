@@ -1,10 +1,10 @@
 lesscsslint
 ===========
 
-> CSSLint for Less.
-
 [![Build Status](https://travis-ci.org/joshuaspence/lesscsslint.png)](http://travis-ci.org/joshuaspence/lesscsslint)
 [![NPM version](https://badge.fury.io/js/lesscsslint.png)](http://badge.fury.io/js/lesscsslint)
+
+> CSSLint for Less.
 
 ## Command line interface
 Install lesscsslint with [npm](https://www.npmjs.org/) to use the command line
