@@ -3,7 +3,7 @@ lesscsslint
 
 > CSSLint for Less.
 
-[![build status](https://secure.travis-ci.org/joshuaspence/lesscsslint.png)](http://travis-ci.org/joshuaspence/lesscsslint)
+[![Build Status](https://secure.travis-ci.org/joshuaspence/lesscsslint.png)](http://travis-ci.org/joshuaspence/lesscsslint)
 [![NPM version](https://badge.fury.io/js/lesscsslint.png)](http://badge.fury.io/js/lesscsslint)
 
 ## Command line interface
