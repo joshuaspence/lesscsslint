@@ -30,6 +30,7 @@
       "email": "josh@joshuaspence.com"
     }
   ],
+  "main": "./lib/csslint.js",
   "bin": "./bin/lesscsslint.js",
   "repository": {
     "type": "git",
