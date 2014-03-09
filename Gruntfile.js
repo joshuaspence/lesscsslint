@@ -34,9 +34,9 @@ module.exports = function(grunt) {
 
     // Load tasks.
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-jscs-checker');
     grunt.loadNpmTasks('grunt-jsonlint');
-    grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-release');
 
     // Register tasks.
