@@ -13,5 +13,8 @@ insert_final_newline = true
 [test/less/**.{css.map,txt}]
 insert_final_newline = false
 
+[package.json]
+indent_size = 2
+
 [.travis.yml]
 indent_size = 2
