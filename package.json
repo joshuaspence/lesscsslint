@@ -52,7 +52,8 @@
     "grunt-contrib-nodeunit": "~0.3.2",
     "grunt-jscs-checker": "~0.4.0",
     "grunt-jsonlint": "~1.0.4",
-    "grunt-release": "~0.7.0"
+    "grunt-release": "~0.7.0",
+    "package-json-validator": "~0.5.5"
   },
   "engines": {
     "node": ">= 0.8.0"

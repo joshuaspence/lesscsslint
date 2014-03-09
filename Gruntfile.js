@@ -33,6 +33,7 @@ module.exports = function(grunt) {
     });
 
     // Load tasks.
+    grunt.loadTasks('./tasks');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-jscs-checker');
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-release');
 
     // Register tasks.
-    grunt.registerTask('lint', ['jsonlint', 'jshint', 'jscs']);
+    grunt.registerTask('lint', ['jsonlint', 'jshint', 'jscs', 'npm-validate']);
     grunt.registerTask('test', ['nodeunit']);
     grunt.registerTask('travis', ['lint', 'test']);
     grunt.registerTask('default', ['lint', 'test']);
