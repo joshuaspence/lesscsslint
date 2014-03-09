@@ -41,6 +41,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-release');
 
     // Register tasks.
+    grunt.renameTask('release', 'bump');
     grunt.registerTask('lint', ['jsonlint', 'jshint', 'jscs', 'npm-validate']);
     grunt.registerTask('test', ['nodeunit']);
     grunt.registerTask('travis', ['lint', 'test']);
