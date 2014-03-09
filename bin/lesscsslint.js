@@ -36,11 +36,11 @@ if (!program.args.length) {
 // Setup the CSSLint rules that will be applied.
 var ruleset = csslint.getRuleset();
 csslint.getRules().forEach(function(rule) {
-    if (_.contains(program.errors, rule)) {
+    if (_.contains(program.errors, rule.id)) {
         ruleset[rule.id] = 2;
-    } else if (_.contains(program.warnings, rule)) {
+    } else if (_.contains(program.warnings, rule.id)) {
         ruleset[rule.id] = 1;
-    } else if (_.contains(program.ignore, rule)) {
+    } else if (_.contains(program.ignore, rule.id)) {
         ruleset[rule.id] = 0;
     }
 });
