@@ -8,13 +8,17 @@ var _ = require('lodash'),
     path = require('path'),
     program = require('commander');
 
+function split(values) {
+    return values.split(',');
+}
+
 program
     .version(require('../package.json').version)
     .usage('[options] <files>')
     .option('--format <format>', 'Indicate which format to use for output.', 'text')
-    .option('--errors <rules>', 'Indicate which CSSLint rules to include as errors.', String.prototype.split)
-    .option('--warnings <rules>', 'Indicate which rules to include as warnings.', String.prototype.split)
-    .option('--ignore <rules>', 'Indicate which rules to ignore completely.', String.prototype.split);
+    .option('--errors <rules>', 'Indicate which CSSLint rules to include as errors.', split)
+    .option('--warnings <rules>', 'Indicate which rules to include as warnings.', split)
+    .option('--ignore <rules>', 'Indicate which rules to ignore completely.', split);
 
 program.on('--version', function() {
     console.log('csslint: ' + require('csslint').CSSLint.version);
