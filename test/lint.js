@@ -35,5 +35,30 @@ module.exports = (function() {
         };
     });
 
+    fs.readdirSync('test/less').filter(function(file) {
+        return /\.css$/.test(file);
+    }).forEach(function(file) {
+        tests[file] = function(test) {
+            var basename = path.basename(file, '.css');
+            file = path.join('test/less', file);
+
+            test.expect(4);
+
+            fs.readFile(file, 'utf8', function(err, data) {
+                test.ifError(err);
+
+                lint.lintCSS(file, data, csslint.getRuleset(), function(err, results) {
+                    test.ifError(err);
+
+                    fs.readFile(path.join('test/less', basename + '.css.lint'), 'utf8', function(err, expectedResults) {
+                        test.ifError(err);
+                        test.equal(formatter.formatResults(results, file), expectedResults);
+                        test.done();
+                    });
+                });
+            });
+        };
+    });
+
     return tests;
 }());
