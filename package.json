@@ -44,7 +44,8 @@
     "csslint": "~0.10.0",
     "less": "~1.7.0",
     "lodash": "~2.4.1",
-    "source-map": "~0.1.33"
+    "source-map": "~0.1.33",
+    "xml": "~0.0.12"
   },
   "devDependencies": {
     "grunt": "~0.4.3",
