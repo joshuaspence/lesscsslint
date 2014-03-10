@@ -22,7 +22,7 @@ module.exports = (function() {
             fs.readFile(file, 'utf8', function(err, data) {
                 test.ifError(err);
 
-                lint.verify(file, data, csslint.getRuleset(), function(err, results) {
+                lint.lintLESS(file, data, csslint.getRuleset(), function(err, results) {
                     test.ifError(err);
 
                     fs.readFile(path.join('test/less', basename + '.txt'), 'utf8', function(err, expectedResults) {

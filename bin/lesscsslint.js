@@ -55,7 +55,7 @@ _(program.args).forEach(function(input) {
                 process.exit(2);
             }
 
-            lint.verify(input, data, ruleset, function(err, results) {
+            lint.lintLESS(input, data, ruleset, function(err, results) {
                 if (err) {
                     console.error(err.toString());
                     process.exit(3);
@@ -80,7 +80,7 @@ _(program.args).forEach(function(input) {
         });
 
         process.stdin.on('end', function() {
-            lint.verify(input, buffer, ruleset, function(err, results) {
+            lint.lintLESS(input, buffer, ruleset, function(err, results) {
                 if (err) {
                     console.error(err.toString());
                     process.exit(3);
