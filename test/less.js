@@ -7,11 +7,9 @@ var fs = require('fs'),
 module.exports = (function() {
     var tests = {};
 
-    fs.readdirSync('test/less').forEach(function(file) {
-        if (!/\.less/.test(file)) {
-            return;
-        }
-
+    fs.readdirSync('test/less').filter(function(file) {
+        return /\.less/.test(file);
+    }).forEach(function(file) {
         tests[file] = function(test) {
             var basename = path.basename(file, '.less');
             file = path.join('test/less', file);
