@@ -1,7 +1,7 @@
 test/less/repost-preview.less: line 1, col 1, Warning - The properties margin-top, margin-bottom, margin-left, margin-right can be replaced by margin.
-test/less/repost-preview.less: line 16, col 17, Warning - Values of 0 shouldn't have units specified.
-test/less/repost-preview.less: line 17, col 15, Warning - Values of 0 shouldn't have units specified.
-test/less/repost-preview.less: line 25, col 11, Warning - Values of 0 shouldn't have units specified.
-test/less/repost-preview.less: line 43, col 11, Warning - Values of 0 shouldn't have units specified.
+test/less/repost-preview.less: line 16, col 13, Warning - Values of 0 shouldn't have units specified.
+test/less/repost-preview.less: line 17, col 13, Warning - Values of 0 shouldn't have units specified.
+test/less/repost-preview.less: line 25, col 13, Warning - Values of 0 shouldn't have units specified.
+test/less/repost-preview.less: line 43, col 13, Warning - Values of 0 shouldn't have units specified.
 test/less/repost-preview.less: line 1, col 1, Warning - Don't use IDs in selectors.
-test/less/repost-preview.less: line 77, col 11, Warning - Values of 0 shouldn't have units specified.
+test/less/repost-preview.less: line 77, col 9, Warning - Values of 0 shouldn't have units specified.
