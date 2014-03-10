@@ -40,14 +40,5 @@ module.exports.errorCodes = {
             test.equal(code, 0);
             test.done();
         });
-    },
-    usage: function(test) {
-        var lesscsslint = spawn('bin/lesscsslint.js', []);
-
-        test.expect(1);
-        lesscsslint.on('close', function(code) {
-            test.notEqual(code, 0);
-            test.done();
-        });
     }
 };

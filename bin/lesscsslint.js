@@ -5,6 +5,7 @@
 var _ = require('lodash'),
     csslint = require('../lib/csslint'),
     fs = require('fs'),
+    lint = require('../lib/lint'),
     path = require('path'),
     program = require('commander');
 
@@ -34,8 +35,8 @@ if (!program.args.length) {
 }
 
 // Setup the CSSLint rules that will be applied.
-var ruleset = csslint.getRuleset();
-csslint.getRules().forEach(function(rule) {
+var ruleset = csslint.CSSLint.getRuleset();
+csslint.CSSLint.getRules().forEach(function(rule) {
     if (_.contains(program.errors, rule.id)) {
         ruleset[rule.id] = 2;
     } else if (_.contains(program.warnings, rule.id)) {
@@ -54,13 +55,13 @@ _(program.args).forEach(function(input) {
                 process.exit(2);
             }
 
-            csslint.verify(input, data, ruleset, function(err, results) {
+            lint.verify(input, data, ruleset, function(err, results) {
                 if (err) {
                     console.error(err.toString());
                     process.exit(3);
                 }
 
-                console.log(csslint.format(results, 'STDIN', program.format));
+                console.log(csslint.CSSLint.format(results, 'STDIN', program.format));
 
                 if (_(results.messages).size() > 0) {
                     process.exit(4);
@@ -79,13 +80,13 @@ _(program.args).forEach(function(input) {
         });
 
         process.stdin.on('end', function() {
-            csslint.verify(input, buffer, ruleset, function(err, results) {
+            lint.verify(input, buffer, ruleset, function(err, results) {
                 if (err) {
                     console.error(err.toString());
                     process.exit(3);
                 }
 
-                console.log(csslint.format(results, 'STDIN', program.format));
+                console.log(csslint.CSSLint.format(results, 'STDIN', program.format));
 
                 if (_(results.messages).size() > 0) {
                     process.exit(4);

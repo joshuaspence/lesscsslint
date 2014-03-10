@@ -1,7 +1,8 @@
 'use strict';
 
-var csslint = require('../lib/csslint'),
+var csslint = require('../lib/csslint').CSSLint,
     fs = require('fs'),
+    lint = require('../lib/lint'),
     path = require('path');
 
 var formatter = csslint.getFormatter('compact');
@@ -23,7 +24,7 @@ module.exports = (function() {
             fs.readFile(file, 'utf8', function(err, data) {
                 test.ifError(err);
 
-                csslint.verify(file, data, csslint.getRuleset(), function(err, results) {
+                lint.verify(file, data, csslint.getRuleset(), function(err, results) {
                     test.ifError(err);
 
                     fs.readFile(path.join('test/less', basename + '.txt'), 'utf8', function(err, expectedResults) {
