@@ -10,7 +10,7 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[test/less/**.{css.map,txt}]
+[test/less/**.{css.map,lint}]
 insert_final_newline = false
 
 [package.json]

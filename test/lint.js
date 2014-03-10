@@ -25,7 +25,7 @@ module.exports = (function() {
                 lint.lintLESS(file, data, csslint.getRuleset(), function(err, results) {
                     test.ifError(err);
 
-                    fs.readFile(path.join('test/less', basename + '.txt'), 'utf8', function(err, expectedResults) {
+                    fs.readFile(path.join('test/less', basename + '.lint'), 'utf8', function(err, expectedResults) {
                         test.ifError(err);
                         test.equal(formatter.formatResults(results, file), expectedResults);
                         test.done();
