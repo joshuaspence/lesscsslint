@@ -8,7 +8,7 @@ module.exports = (function() {
     var tests = {};
 
     fs.readdirSync('test/less').filter(function(file) {
-        return /\.less/.test(file);
+        return /\.less$/.test(file);
     }).forEach(function(file) {
         tests[file] = function(test) {
             var basename = path.basename(file, '.less');
