@@ -98,7 +98,7 @@
     },
     "disallowKeywordsOnNewLine": ["else"],
     "requireLineFeedAtFileEnd": true,
-    "safeContextKeyword": ["self"],
+    "safeContextKeyword": ["rule", "self"],
     "disallowYodaConditions": true,
     "validateJSDoc": {
         "checkParamNames": true,
