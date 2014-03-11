@@ -1,0 +1,10 @@
+test/fixtures/extend.less: line 5, col 1, Warning - Don't use adjoining classes.
+test/fixtures/extend.less: line 12, col 1, Warning - Don't use adjoining classes.
+test/fixtures/extend.less: line 40, col 1, Warning - Don't use adjoining classes.
+test/fixtures/extend.less: line 41, col 3, Warning - Unknown property 'result'.
+test/fixtures/extend.less: line 46, col 3, Warning - Unknown property 'result'.
+test/fixtures/extend.less: line 48, col 1, Warning - Don't use adjoining classes.
+test/fixtures/extend.less: line 49, col 3, Warning - Unknown property 'result'.
+test/fixtures/extend.less: line 53, col 5, Warning - Unknown property 'result'.
+test/fixtures/extend.less: line 57, col 3, Warning - Don't use adjoining classes.
+test/fixtures/extend.less: line 58, col 5, Warning - Unknown property 'result'.

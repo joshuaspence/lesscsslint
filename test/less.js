@@ -7,12 +7,12 @@ var fs = require('fs'),
 module.exports = (function() {
     var tests = {};
 
-    fs.readdirSync('test/less').filter(function(file) {
+    fs.readdirSync('test/fixtures').filter(function(file) {
         return /\.less$/.test(file);
     }).forEach(function(file) {
         tests[file] = function(test) {
             var basename = path.basename(file, '.less');
-            file = path.join('test/less', file);
+            file = path.join('test/fixtures', file);
 
             test.expect(6);
 
@@ -22,13 +22,13 @@ module.exports = (function() {
                 less.toCSS(file, data, function(err, css, sourceMap) {
                     test.ifError(err);
 
-                    fs.readFile(path.join('test/less', basename + '.css'), 'utf8', function(err, expectedCss) {
+                    fs.readFile(path.join('test/fixtures', basename + '.css'), 'utf8', function(err, expectedCss) {
                         test.ifError(err);
                         test.equal(css, expectedCss);
 
-                        fs.exists(path.join('test/less', basename + '.css.map'), function(exists) {
+                        fs.exists(path.join('test/fixtures', basename + '.css.map'), function(exists) {
                             if (exists) {
-                                fs.readFile(path.join('test/less', basename + '.css.map'), 'utf8', function(err, expectedSourceMap) {
+                                fs.readFile(path.join('test/fixtures', basename + '.css.map'), 'utf8', function(err, expectedSourceMap) {
                                     test.ifError(err);
                                     test.equal(sourceMap, expectedSourceMap);
                                     test.done();

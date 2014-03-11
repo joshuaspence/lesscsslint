@@ -4,7 +4,7 @@ var spawn = require('child_process').spawn;
 
 module.exports.errorCodes = {
     fileNotExist: function(test) {
-        var lesscsslint = spawn('bin/lesscsslint.js', ['test/less/foo.bar']);
+        var lesscsslint = spawn('bin/lesscsslint.js', ['test/fixtures/foo.bar']);
 
         test.expect(1);
         lesscsslint.on('close', function(code) {
@@ -13,7 +13,7 @@ module.exports.errorCodes = {
         });
     },
     invalidCss: function(test) {
-        var lesscsslint = spawn('bin/lesscsslint.js', ['test/less/css.less']);
+        var lesscsslint = spawn('bin/lesscsslint.js', ['test/fixtures/css.less']);
 
         test.expect(1);
         lesscsslint.on('close', function(code) {
@@ -33,7 +33,7 @@ module.exports.errorCodes = {
         });
     },
     ok: function(test) {
-        var lesscsslint = spawn('bin/lesscsslint.js', ['test/less/ok.less']);
+        var lesscsslint = spawn('bin/lesscsslint.js', ['test/fixtures/ok.less']);
 
         test.expect(1);
         lesscsslint.on('close', function(code) {

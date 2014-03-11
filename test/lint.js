@@ -10,12 +10,12 @@ var formatter = csslint.getFormatter('compact');
 module.exports = (function() {
     var tests = {};
 
-    fs.readdirSync('test/less').filter(function(file) {
+    fs.readdirSync('test/fixtures').filter(function(file) {
         return /\.less$/.test(file);
     }).forEach(function(file) {
         tests[file] = function(test) {
             var basename = path.basename(file, '.less');
-            file = path.join('test/less', file);
+            file = path.join('test/fixtures', file);
 
             test.expect(4);
 
@@ -25,7 +25,7 @@ module.exports = (function() {
                 lint.lintLESS(file, data, csslint.getRuleset(), function(err, results) {
                     test.ifError(err);
 
-                    fs.readFile(path.join('test/less', basename + '.less.lint'), 'utf8', function(err, expectedResults) {
+                    fs.readFile(path.join('test/fixtures', basename + '.less.lint'), 'utf8', function(err, expectedResults) {
                         test.ifError(err);
                         test.equal(formatter.formatResults(results, file), expectedResults);
                         test.done();
@@ -35,12 +35,12 @@ module.exports = (function() {
         };
     });
 
-    fs.readdirSync('test/less').filter(function(file) {
+    fs.readdirSync('test/fixtures').filter(function(file) {
         return /\.css$/.test(file);
     }).forEach(function(file) {
         tests[file] = function(test) {
             var basename = path.basename(file, '.css');
-            file = path.join('test/less', file);
+            file = path.join('test/fixtures', file);
 
             test.expect(4);
 
@@ -50,7 +50,7 @@ module.exports = (function() {
                 lint.lintCSS(file, data, csslint.getRuleset(), function(err, results) {
                     test.ifError(err);
 
-                    fs.readFile(path.join('test/less', basename + '.css.lint'), 'utf8', function(err, expectedResults) {
+                    fs.readFile(path.join('test/fixtures', basename + '.css.lint'), 'utf8', function(err, expectedResults) {
                         test.ifError(err);
                         test.equal(formatter.formatResults(results, file), expectedResults);
                         test.done();

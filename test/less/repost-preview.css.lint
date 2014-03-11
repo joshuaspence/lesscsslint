@@ -1,7 +1,0 @@
-test/less/repost-preview.css: line 7, col 1, Warning - The properties margin-top, margin-bottom, margin-left, margin-right can be replaced by margin.
-test/less/repost-preview.css: line 14, col 17, Warning - Values of 0 shouldn't have units specified.
-test/less/repost-preview.css: line 15, col 15, Warning - Values of 0 shouldn't have units specified.
-test/less/repost-preview.css: line 25, col 11, Warning - Values of 0 shouldn't have units specified.
-test/less/repost-preview.css: line 42, col 11, Warning - Values of 0 shouldn't have units specified.
-test/less/repost-preview.css: line 65, col 17, Warning - Don't use IDs in selectors.
-test/less/repost-preview.css: line 66, col 11, Warning - Values of 0 shouldn't have units specified.

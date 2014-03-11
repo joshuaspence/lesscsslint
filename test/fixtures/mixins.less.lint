@@ -1,0 +1,33 @@
+test/fixtures/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.less: line 10, col 5, Warning - Use single quotes for property values, do not use double quotes.
+test/fixtures/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.less: line 16, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.less: line 21, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.less: line 28, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.less: line 28, col 1, Warning - 2 IDs in the selector, really?
+test/fixtures/mixins.less: line 28, col 1, Warning - 2 IDs in the selector, really?
+test/fixtures/mixins.less: line 28, col 1, Warning - 2 IDs in the selector, really?
+test/fixtures/mixins.less: line 55, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.less: line 58, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.less: line 62, col 5, Warning - Don't use adjoining classes.
+test/fixtures/mixins.less: line 62, col 5, Warning - Don't use adjoining classes.
+test/fixtures/mixins.less: line 65, col 13, Warning - Values of 0 shouldn't have units specified.
+test/fixtures/mixins.less: line 67, col 9, Warning - Don't use adjoining classes.
+test/fixtures/mixins.less: line 53, col 5, Warning - Using width with border can sometimes make elements larger than you expect.
+test/fixtures/mixins.less: line 67, col 9, Warning - Don't use adjoining classes.
+test/fixtures/mixins.less: line 102, col 8, Warning - Heading (h1) should not be qualified.
+test/fixtures/mixins.less: line 103, col 13, Warning - Heading (h1) should not be qualified.
+test/fixtures/mixins.less: line 103, col 13, Warning - Heading (h1) has already been defined.
+test/fixtures/mixins.less: line 104, col 8, Warning - The universal selector (*) is known to be slow.
+test/fixtures/mixins.less: line 102, col 8, Warning - Heading (h2) should not be qualified.
+test/fixtures/mixins.less: line 103, col 13, Warning - Heading (h2) should not be qualified.
+test/fixtures/mixins.less: line 103, col 13, Warning - Heading (h2) has already been defined.
+test/fixtures/mixins.less: line 104, col 8, Warning - The universal selector (*) is known to be slow.
+test/fixtures/mixins.less: line 102, col 8, Warning - Heading (h3) should not be qualified.
+test/fixtures/mixins.less: line 103, col 13, Warning - Heading (h3) should not be qualified.
+test/fixtures/mixins.less: line 103, col 13, Warning - Heading (h3) has already been defined.
+test/fixtures/mixins.less: line 104, col 8, Warning - The universal selector (*) is known to be slow.
+test/fixtures/mixins.less: line 111, col 5, Warning - Expected (<bg-image>) but found '"/a.png"'.
+test/fixtures/mixins.less: line 111, col 5, Warning - Use single quotes for property values, do not use double quotes.
+test/fixtures/mixins.less: line 131, col 5, Warning - Don't use adjoining classes.

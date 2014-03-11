@@ -1,0 +1,38 @@
+test/fixtures/mixins.css: line 10, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.css: line 13, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.css: line 14, col 19, Warning - Use single quotes for property values, do not use double quotes.
+test/fixtures/mixins.css: line 16, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.css: line 19, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.css: line 22, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.css: line 28, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/mixins.css: line 33, col 1, Warning - 2 IDs in the selector, really?
+test/fixtures/mixins.css: line 36, col 1, Warning - 2 IDs in the selector, really?
+test/fixtures/mixins.css: line 39, col 1, Warning - 2 IDs in the selector, really?
+test/fixtures/mixins.css: line 58, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 58, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 61, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 64, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 67, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 68, col 8, Warning - Values of 0 shouldn't have units specified.
+test/fixtures/mixins.css: line 70, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 70, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 75, col 3, Warning - Using width with border can sometimes make elements larger than you expect.
+test/fixtures/mixins.css: line 78, col 8, Warning - Values of 0 shouldn't have units specified.
+test/fixtures/mixins.css: line 82, col 8, Warning - Values of 0 shouldn't have units specified.
+test/fixtures/mixins.css: line 84, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: line 102, col 5, Warning - Heading (h1) should not be qualified.
+test/fixtures/mixins.css: line 105, col 10, Warning - Heading (h1) should not be qualified.
+test/fixtures/mixins.css: line 105, col 10, Warning - Heading (h1) has already been defined.
+test/fixtures/mixins.css: line 108, col 6, Warning - The universal selector (*) is known to be slow.
+test/fixtures/mixins.css: line 111, col 5, Warning - Heading (h2) should not be qualified.
+test/fixtures/mixins.css: line 114, col 10, Warning - Heading (h2) should not be qualified.
+test/fixtures/mixins.css: line 114, col 10, Warning - Heading (h2) has already been defined.
+test/fixtures/mixins.css: line 117, col 6, Warning - The universal selector (*) is known to be slow.
+test/fixtures/mixins.css: line 120, col 5, Warning - Heading (h3) should not be qualified.
+test/fixtures/mixins.css: line 123, col 10, Warning - Heading (h3) should not be qualified.
+test/fixtures/mixins.css: line 123, col 10, Warning - Heading (h3) has already been defined.
+test/fixtures/mixins.css: line 126, col 6, Warning - The universal selector (*) is known to be slow.
+test/fixtures/mixins.css: line 130, col 3, Warning - Expected (<bg-image>) but found '"/a.png"'.
+test/fixtures/mixins.css: line 130, col 29, Warning - Use single quotes for property values, do not use double quotes.
+test/fixtures/mixins.css: line 139, col 1, Warning - Don't use adjoining classes.
+test/fixtures/mixins.css: Warning - You have 2 h1s, 2 h2s, 2 h3s defined in this stylesheet.

@@ -1,0 +1,25 @@
+test/fixtures/css.css: line 8, col 1, Warning - The universal selector (*) is known to be slow.
+test/fixtures/css.css: line 14, col 3, Warning - Expected (<color> | inherit) but found 'none'.
+test/fixtures/css.css: line 19, col 1, Warning - Element (div#id) is overqualified, just use #id without element name.
+test/fixtures/css.css: line 19, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/css.css: line 22, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/css.css: line 25, col 1, Warning - Don't use adjoining classes.
+test/fixtures/css.css: line 25, col 1, Warning - Don't use adjoining classes.
+test/fixtures/css.css: line 29, col 3, Warning - The universal selector (*) is known to be slow.
+test/fixtures/css.css: line 34, col 3, Warning - The universal selector (*) is known to be slow.
+test/fixtures/css.css: line 52, col 5, Warning - Heading (h1) should not be qualified.
+test/fixtures/css.css: line 52, col 5, Warning - Heading (h1) has already been defined.
+test/fixtures/css.css: line 55, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/css.css: line 60, col 3, Warning - Expected end of value but found 'auto'.
+test/fixtures/css.css: line 62, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/css.css: line 69, col 1, Warning - Missing vendor-prefixed CSS gradients for Firefox 3.6+, Webkit (Safari 5+, Chrome), Opera 11.1+.
+test/fixtures/css.css: line 70, col 3, Warning - Missing standard property 'border-radius' to go along with '-moz-border-radius'.
+test/fixtures/css.css: line 75, col 11, Error - Unexpected token ';' at line 75, col 11.
+test/fixtures/css.css: line 77, col 3, Warning - Duplicate property 'width' found.
+test/fixtures/css.css: line 77, col 3, Warning - Expected (<length> | <percentage> | auto | inherit) but found 'auto\9'.
+test/fixtures/css.css: line 80, col 3, Warning - Unknown property 'multiple-semi-colons'.
+test/fixtures/css.css: line 82, col 1, Warning - Don't use IDs in selectors.
+test/fixtures/css.css: line 83, col 3, Warning - Use of !important
+test/fixtures/css.css: line 84, col 3, Warning - Use of !important
+test/fixtures/css.css: line 85, col 3, Warning - Use of !important
+test/fixtures/css.css: Warning - You have 2 h1s defined in this stylesheet.
