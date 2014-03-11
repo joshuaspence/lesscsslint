@@ -1,3 +1,4 @@
+test/less/timeline.css: line 13, col 60, Warning - Use single quotes for property values, do not use double quotes.
 test/less/timeline.css: line 48, col 1, Warning - Heading (h1) has already been defined.
 test/less/timeline.css: line 51, col 1, Warning - Heading (h2) has already been defined.
 test/less/timeline.css: line 54, col 1, Warning - Heading (h3) has already been defined.
@@ -7,11 +8,12 @@ test/less/timeline.css: line 74, col 3, Warning - Use of !important
 test/less/timeline.css: line 75, col 3, Warning - Use of !important
 test/less/timeline.css: line 91, col 3, Warning - Duplicate property 'background' found.
 test/less/timeline.css: line 102, col 32, Warning - Values of 0 shouldn't have units specified.
-test/less/timeline.css: line 102, col 75, Warning - Values of 0 shouldn't have units specified.
 test/less/timeline.css: line 102, col 28, Warning - Values of 0 shouldn't have units specified.
 test/less/timeline.css: line 102, col 79, Warning - Values of 0 shouldn't have units specified.
+test/less/timeline.css: line 102, col 75, Warning - Values of 0 shouldn't have units specified.
 test/less/timeline.css: line 103, col 3, Warning - Fallback border-bottom (hex or RGB) should precede RGBA border-bottom.
 test/less/timeline.css: line 109, col 3, Warning - The property -moz-animation-delay is compatible with -webkit-animation-delay and should be included as well.
+test/less/timeline.css: line 135, col 53, Warning - Use single quotes for property values, do not use double quotes.
 test/less/timeline.css: line 138, col 3, Warning - The property -moz-animation-delay is compatible with -webkit-animation-delay and should be included as well.
 test/less/timeline.css: line 143, col 8, Warning - Attribute selectors with *= are slow!
 test/less/timeline.css: line 149, col 8, Warning - Attribute selectors with *= are slow!

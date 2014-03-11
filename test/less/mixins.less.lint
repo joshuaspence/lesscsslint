@@ -1,5 +1,6 @@
 test/less/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
 test/less/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
+test/less/mixins.less: line 10, col 5, Warning - Use single quotes for property values, do not use double quotes.
 test/less/mixins.less: line 5, col 1, Warning - Don't use IDs in selectors.
 test/less/mixins.less: line 16, col 1, Warning - Don't use IDs in selectors.
 test/less/mixins.less: line 21, col 1, Warning - Don't use IDs in selectors.
@@ -28,4 +29,5 @@ test/less/mixins.less: line 103, col 13, Warning - Heading (h3) should not be qu
 test/less/mixins.less: line 103, col 13, Warning - Heading (h3) has already been defined.
 test/less/mixins.less: line 104, col 8, Warning - The universal selector (*) is known to be slow.
 test/less/mixins.less: line 111, col 5, Warning - Expected (<bg-image>) but found '"/a.png"'.
+test/less/mixins.less: line 111, col 5, Warning - Use single quotes for property values, do not use double quotes.
 test/less/mixins.less: line 131, col 5, Warning - Don't use adjoining classes.

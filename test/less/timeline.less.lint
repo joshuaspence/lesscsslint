@@ -1,3 +1,4 @@
+test/less/timeline.less: line 42, col 5, Warning - Use single quotes for property values, do not use double quotes.
 test/less/timeline.less: line 76, col 1, Warning - Heading (h1) has already been defined.
 test/less/timeline.less: line 77, col 1, Warning - Heading (h2) has already been defined.
 test/less/timeline.less: line 78, col 1, Warning - Heading (h3) has already been defined.
@@ -9,6 +10,7 @@ test/less/timeline.less: line 111, col 9, Warning - Duplicate property 'backgrou
 test/less/timeline.less: line 121, col 13, Warning - Values of 0 shouldn't have units specified.
 test/less/timeline.less: line 122, col 13, Warning - Fallback border-bottom (hex or RGB) should precede RGBA border-bottom.
 test/less/timeline.less: line 125, col 13, Warning - The property -moz-animation-delay is compatible with -webkit-animation-delay and should be included as well.
+test/less/timeline.less: line 152, col 9, Warning - Use single quotes for property values, do not use double quotes.
 test/less/timeline.less: line 155, col 9, Warning - The property -moz-animation-delay is compatible with -webkit-animation-delay and should be included as well.
 test/less/timeline.less: line 160, col 6, Warning - Attribute selectors with *= are slow!
 test/less/timeline.less: line 160, col 6, Warning - Attribute selectors with *= are slow!
