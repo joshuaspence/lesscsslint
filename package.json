@@ -48,7 +48,7 @@
     "xml": "~0.0.12"
   },
   "devDependencies": {
-    "grunt": "~0.4.3",
+    "grunt": "~0.4.4",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-contrib-nodeunit": "~0.3.3",
     "grunt-jscs-checker": "~0.4.0",
