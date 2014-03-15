@@ -3,8 +3,6 @@
 module.exports = function(grunt) {
     // Configuration.
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-
         jscs: {
             options: {
                 config: '.jscsrc'
