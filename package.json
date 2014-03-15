@@ -37,7 +37,7 @@
     "url": "git://github.com/joshuaspence/lesscsslint.git"
   },
   "scripts": {
-    "test": "grunt travis"
+    "test": "grunt lint test validate"
   },
   "dependencies": {
     "commander": "~2.1.0",

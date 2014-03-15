@@ -48,7 +48,6 @@ module.exports = function(grunt) {
         grunt.task.run('lint', 'test', 'validate', bump);
     });
     grunt.registerTask('test', ['nodeunit']);
-    grunt.registerTask('travis', ['lint', 'test', 'validate']);
     grunt.registerTask('validate', ['npm-validate']);
     grunt.registerTask('default', ['lint', 'test', 'validate']);
 };
