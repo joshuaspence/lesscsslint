@@ -22,6 +22,7 @@ module.exports = function(grunt) {
             test: '<%= nodeunit.all %>'
         },
         jsonlint: {
+            jscs: ['.jscsrc'],
             jshint: ['.jshintrc'],
             npm: ['package.json']
         },
