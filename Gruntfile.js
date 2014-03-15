@@ -24,7 +24,8 @@ module.exports = function(grunt) {
         jsonlint: {
             jscs: '.jscsrc',
             jshint: '.jshintrc',
-            npm: 'package.json'
+            npm: 'package.json',
+            sublime: 'lesscsslint.sublime-project'
         },
         nodeunit: {
             all: 'test/**/*.js'
