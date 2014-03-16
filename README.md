@@ -1,6 +1,7 @@
 lesscsslint
 ===========
 [![Build Status](https://travis-ci.org/joshuaspence/lesscsslint.png)](http://travis-ci.org/joshuaspence/lesscsslint)
+[![Dependency Status](https://www.versioneye.com/nodejs/lesscsslint/badge.png)](https://www.versioneye.com/nodejs/lesscsslint)
 [![NPM version](https://badge.fury.io/js/lesscsslint.png)](http://badge.fury.io/js/lesscsslint)
 
 [CSSLint](http://csslint.net/) for [Less](http://lesscss.org/).
