@@ -13,6 +13,9 @@ insert_final_newline = true
 [test/fixtures/**.{css.map,lint}]
 insert_final_newline = false
 
+[CHANGELOG.md]
+indent_size = 2
+
 [package.json]
 indent_size = 2
 
