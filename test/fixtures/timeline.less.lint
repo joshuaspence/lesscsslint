@@ -4,8 +4,8 @@ test/fixtures/timeline.less: line 77, col 1, Warning - Heading (h2) has already 
 test/fixtures/timeline.less: line 78, col 1, Warning - Heading (h3) has already been defined.
 test/fixtures/timeline.less: line 79, col 1, Warning - Heading (h4) has already been defined.
 test/fixtures/timeline.less: line 80, col 1, Warning - Heading (h5) has already been defined.
-test/fixtures/timeline.less: line 93, col 3, Warning - Use of !important
-test/fixtures/timeline.less: line 94, col 3, Warning - Use of !important
+test/fixtures/timeline.less: line 93, col 5, Warning - Use of !important
+test/fixtures/timeline.less: line 94, col 5, Warning - Use of !important
 test/fixtures/timeline.less: line 111, col 9, Warning - Duplicate property 'background' found.
 test/fixtures/timeline.less: line 121, col 13, Warning - Values of 0 shouldn't have units specified.
 test/fixtures/timeline.less: line 122, col 13, Warning - Fallback border-bottom (hex or RGB) should precede RGBA border-bottom.
