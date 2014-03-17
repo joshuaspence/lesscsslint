@@ -53,6 +53,7 @@
     "grunt-contrib-nodeunit": "~0.3.3",
     "grunt-jscs-checker": "~0.4.0",
     "grunt-jsonlint": "~1.0.4",
+    "grunt-lintspaces": "~0.4.1",
     "grunt-npm-validate": "~1.2.3",
     "grunt-release": "~0.7.0"
   },

@@ -27,6 +27,19 @@ module.exports = function(grunt) {
             npm: 'package.json',
             sublime: 'lesscsslint.sublime-project'
         },
+        lintspaces: {
+            options: {
+                editorconfig: '.editorconfig',
+                ignores: [
+                    'js-comments'
+                ]
+            },
+            all: [
+                '**/*',
+                '!node_modules/**',
+                '!lesscsslint.sublime-workspace'
+            ]
+        },
         nodeunit: {
             all: 'test/**/*.js'
         }
@@ -37,6 +50,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-jscs-checker');
     grunt.loadNpmTasks('grunt-jsonlint');
+    grunt.loadNpmTasks('grunt-lintspaces');
     grunt.loadNpmTasks('grunt-npm-validate');
     grunt.loadNpmTasks('grunt-release');
 

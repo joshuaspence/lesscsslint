@@ -10,10 +10,13 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+[test/fixtures/**.{css,less}]
+indent_size =
+
 [test/fixtures/**.{css.map,lint}]
 insert_final_newline = false
 
-[CHANGELOG.md]
+[{CHANGELOG,README}.md]
 indent_size = 2
 
 [package.json]
