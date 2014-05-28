@@ -40,7 +40,7 @@
     "test": "grunt lint test validate"
   },
   "dependencies": {
-    "commander": "~2.1.0",
+    "commander": "~2.2.0",
     "csslint": "~0.10.0",
     "less": "~1.7.0",
     "lodash": "~2.4.1",
